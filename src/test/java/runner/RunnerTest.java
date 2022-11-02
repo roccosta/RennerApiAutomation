@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		tags = "@usuario",
 		glue = "steps",
 		monochrome = true,
-		plugin = {"json:target/reports/CucumberReports.json", "pretty"},
+		plugin = {"junit:target/reports/cucumber.xml","json:target/reports/CucumberReports.json", "pretty"},
 		snippets = SnippetType.CAMELCASE
 			
 		

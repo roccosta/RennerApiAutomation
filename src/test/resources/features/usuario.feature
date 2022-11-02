@@ -4,12 +4,12 @@
 
     Cenário: Cadastrar um usuário válido
       Dado que sejam preenchidos os valores de users com
-        | email    | vtr@vtr.com |
-        | password | vtr@renner  |
+        | email    | teste@teste.com |
+        | password | teste@renner    |
       Quando realizado o POST do Users
       Então o sistema devolve o status 201
-      E o campo "email" retorna o valor "vtr@vtr.com"
-      E o campo "password" retorna o valor "vtr@renner"
+      E o campo "email" retorna o valor "teste@teste.com"
+      E o campo "password" retorna o valor "teste@renner"
 
     Cenário: Consultar um usuário existente
       Dado que seja utilizado o id "1"
@@ -34,9 +34,9 @@
 
     Cenário: Atualizar um usuário válido
       Dado que sejam preenchidos os valores de users com
-        | email    | vtr@vtr.com |
-        | password | vtr@renner  |
+        | email    | teste@teste.com |
+        | password | teste@renner    |
       Quando realizado o PATCH do Users com o id 1
       Então o sistema devolve o status 200
-      E o campo "email" retorna o valor "vtr@vtr.com"
-      E o campo "password" retorna o valor "vtr@renner"
+      E o campo "email" retorna o valor "teste@teste.com"
+      E o campo "password" retorna o valor "teste@renner"
