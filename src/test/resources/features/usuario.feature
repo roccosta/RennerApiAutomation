@@ -40,3 +40,6 @@
       Então o sistema devolve o status 200
       E o campo "email" retorna o valor "teste@teste.com"
       E o campo "password" retorna o valor "teste@renner"
+
+    Cenário: Falhar
+      Dado que haja falha proposital
