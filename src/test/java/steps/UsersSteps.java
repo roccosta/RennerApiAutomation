@@ -47,7 +47,7 @@ public class UsersSteps {
         Assert.assertEquals(value, RestUtils.getResponse(key));
     }
 
-    @Entao("o campo {string} retorna o valor {int}")
+    @Entao("o campo {string} retorna o numero {int}")
     public void oCampoRetornouOValor(String key, int value) {
         Assert.assertEquals(value, RestUtils.getResponse(key));
     }
